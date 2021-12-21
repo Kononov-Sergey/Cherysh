@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Галлерея</title>
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/media.css">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lato:wght@100;400&family=Nunito:wght@300;700&display=swap"
+      rel="stylesheet">
+</head>
+
+<body>
+   <header class="gallery_bar header">
+      <div class="container">
+         <div class="navBar">
+            <button class="home" aria-hidden="true"><a href="./index.html"><i class="fa fa-home"></i></a></button></a>
+            <div class="gallery_main"><a class="nav-link " href="./index.html">Главная</a></div>
+            <div class="gellery_name"><a class="gallery_link nav-link">Портфолио</a></div>
+            <a href="#cont"><button class="def_boot gallery_boot">Записаться</button></a>
+         </div>
+      </div>
+      </div>
+   </header>
+   <section class="gallery">
+      <div class="container">
+         <div class="title">Название съёмки</div>
+         <div class="gallery-item">
+            <div class="pic_tall pic">1</div>
+            <div class="pic">2</div>
+            <div class="pic">3</div>
+            <div class="pic">4</div>
+            <div class="pic">5</div>
+            <div class="pic_huge pic">6</div>
+            <div class="pic">2</div>
+            <div class="pic">3</div>
+            <div class="pic_tall pic">4</div>
+            <div class="pic">5</div>
+            <div class="pic">6</div>
+            <div class="pic">2</div>
+            <div class="pic">3</div>
+            <div class="pic">4</div>
+            <div class="pic">5</div>
+            <div class="pic">6</div>
+
+         </div>
+   </section>
+   <section id='cont' class="contacts">
+      <div class="container">
+         <div class="contacts-title">
+            <div class="contacts-form">
+               <form action="telegram.php" method="POST">
+                  <legend>Записаться на съёмку</legend>
+                  <div class="contacts_text">
+                     Оставьте свои контактные данные,
+                     и мы обсудим лично ваш заказ!
+                  </div>
+                  <div class="form-group">
+                     <label>
+                        Имя
+                     </label>
+                     <input type="text" class="form-control" id="" name="name" autocomplete="off">
+                  </div>
+
+                  <div class="form-group ">
+                     <label>
+                        Телефон
+                     </label>
+                     <input type="text" class="form-control" id="" name="phone" autocomplete="off">
+                  </div>
+
+                  <div class="form-group">
+                     <label class="contscts_lable">
+                        Сообщение
+                     </label>
+                     <textarea name="msg"></textarea>
+                  </div>
+
+                  <button type="submit" class="def_boot contct_batn">Отправить форму</button>
+               </form>
+               <div class="contacts_social-title">
+                  Социальные сети
+               </div>
+               <div class="contact-social">
+                  <a href="https://www.instagram.com/_cherrysh/">
+                     <div class="social_inst">
+                        <img src="./img/img-inst.png" alt="">
+                     </div>
+                  </a>
+                  <a href="https://vk.com/fresh13">
+                     <div class="social_wk">
+                        <img src="./img/img-w.png" alt="">
+                     </div>
+                  </a>
+                  <a href="#">
+                     <div class="social_tgm">
+                        <img src="./img/img-tgm.png" alt="">
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- button-up -->
+   <a class="button">
+      <i class="fa fa-arrow-up"></i>
+   </a>
+   <!--  -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <script src="./js/script.js"></script>
+
+</body>
+
+</html>

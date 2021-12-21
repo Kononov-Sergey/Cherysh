@@ -1,0 +1,653 @@
+/* ==================================================== */
+
+/* Главаня страница */
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.def_boot {
+  color: white;
+  padding: 14px 24px 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  display:block;
+  text-align:center;
+  background: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.def_boot::after {
+  padding: 0;
+  border: 2px solid #00000000;
+  content: '';
+  width: 95%;
+  height: 46px;
+  display: block;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+}
+.def_boot::before {
+  -webkit-transition: all 0s ease-in-out;
+  -moz-transition: all 0s ease-in-out;
+  -o-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  content: '';
+  width: 100%;
+  height: 60px;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  border-left: 15px solid white;
+  box-shadow: -20px 30px 30pх;
+  background: transparent;
+  top: 0px;
+  left: -15px;
+  margin-left: -1px;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  z-index: 1;
+}
+.def_boot:hover:before, .def_boot:active:before,.def_boot:focus:before {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: translate(115%, 0);
+  -moz-transform: translate(115%, 0);
+  -ms-transform: translate(115%, 0);
+  -o-transform: translate(115%, 0);
+  transform: translate(115%, 0);
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(22, 22, 22);
+  
+}
+ .header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(22, 22, 22, 0.8);
+  
+}
+.header__menu{
+  display: flex;
+  align-items: center;
+
+}
+
+.navBar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+.nav__burger{
+  display: none;
+  transition: .4s;
+  
+}
+.logo {
+  height:55px;
+  
+}
+.nav__links li {
+  padding: 0 20px;
+  list-style: none;
+}
+.nav__links{
+display: flex;
+}
+.nav-link {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 20px;
+  padding-bottom: 1px;
+  }
+.nav-link:after {
+  background-color: white;
+  display: block;
+  content: "";
+  height: 3px;
+  width: 0%;
+  transition: width .3s ease-in-out;
+}
+.nav-link:hover:after,
+.nav-link:focus:after {
+    width: 100%;
+}
+.paralax {
+  position: relative;
+  background: url("./img/bg_paralax.jpg");
+  background-size: cover;
+  height: 100%;
+  color: white;
+  background-position: right;
+  
+}
+.paralax__inner{
+position: absolute;
+top: 50%;
+left: 50%;
+text-align: center;
+align-items: center;
+transform: translateX(-50%) translateY(-50%);
+line-height: 2em;
+font-size: 50px;
+font-family: 'Amatic SC', cursive;;
+}
+ 
+.about {
+  position: relative;
+  background: rgb(22, 22, 22);;
+  line-height: 30px;
+  font-weight: lighter;
+  padding: 40px 0 40px 0;
+  color: grey;
+  font-family: 'Lato', sans-serif;
+}
+/* обо мне + текст */
+.about__top {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+.title {
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-size: 60px;
+  margin-bottom: 30px;
+  line-height: 50px;
+  text-align: left;
+  padding-left: 180px;
+  position: relative;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  width: 105px;
+  height: 5px;
+  background: #ff0057;
+  left: 60px;
+  top: 22px;
+}
+.about-text {
+  text-align: center;
+  display: block;
+  position: relative;
+  font-family: 'Nunito', sans-serif;
+  color: rgb(160, 160, 160);
+  font-size: 24px;
+  padding: 0 80px 0 80px;
+}
+
+/* обо мне */
+.about__adv{
+  display: flex;
+  justify-content: space-between;
+}
+.face{
+  width: 350px;
+  height: 200px;
+  transition: 0.5s;
+}
+.about__adv .about__card{
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  cursor: pointer;
+  
+}
+.face.face1{
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+  text-align: center;
+  text-transform: uppercase;
+}
+.about__card:hover .face.face1{
+  background: #ff0057;
+  transform: translateY(0);
+  color: white;
+}
+.face.face1 .content{
+  opacity: 0.2;
+  transition: width 0.5s ease-in-out;
+}
+.about__card:hover .face.face1 .content{
+  opacity: 1;
+  transition: width 0.5s ease-in-out;
+}
+
+.face.face1 .content img{
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+.face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+}
+.about__card:hover .face.face2{
+  transform: translateY(0);
+}
+.content p{
+  margin: 0;
+  padding: 0;
+}
+
+.content a{
+  margin: 15px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.content a:hover{
+  background: #333;
+  color: #fff;
+}
+
+/* карточки работ */
+.work {
+  background-image: url("./img/bg-rock.jpg");
+  background-size:cover;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  overflow-x: hidden;
+}
+.work-title {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+.work__card-list {
+ display: flex;
+ padding: 1rem 0 3em;
+ margin-left: 130px;
+}
+.card {
+  position: relative;
+  flex-direction: column;
+  height: 350px;
+  width: 400px;
+  min-width: 250px;
+  padding: 1.5rem;
+  background: #333;
+  box-shadow: -1rem 0 3rem #000;
+  transition: .2s;
+  display: flex;
+  justify-content: start;
+  background-position-y: 400px;
+  background-repeat: no-repeat;
+  color: grey;
+}
+.cardNum-1:hover {
+  background-image: url("./img/portret.jpeg");
+  
+}
+.cardNum-2:hover {
+  background-image: url("./img/Family-BG.jpg");
+}
+.card:hover {
+  transform: translateY(-1rem);
+  background-size: cover;
+  background-position-y: 0;
+  color: white;
+}
+
+.card:hover~.card {
+  transform: translateX(130px);
+}
+
+.card:not(:first-child) {
+  margin-left: -130px;
+}
+.card:not(:last-child) {
+  margin-left: -130px;
+}
+.card-title{
+  display: block;
+  position: absolute;
+  text-transform: uppercase;
+  transform: rotate(-90deg) translateY(-100px) translateX(-80px);
+  font-family: 'Amatic SC';
+  font-weight: 700;
+  font-size: 50px;
+  color: white;
+}
+.cardNum-1 .card-title{
+  transform: rotate(-90deg) translateY(-55px) translateX(-35px);
+}
+.card__main{
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  position: relative;
+  height: 100%;
+  margin-left: 45px;
+}
+.main-text {
+  position: relative;
+}
+.main-btn {
+  position: absolute;
+  bottom: 0;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 1em;
+  font-family: 'Nunito', sans-serif;
+}
+/* фото галерея */
+.gallery {
+  padding: 35px;
+}
+.gallery-title {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+.photo_gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+}
+.photo {
+  /* box-shadow: -1rem 0 3rem #000; */
+  transition: .3s;
+}
+.photo:hover{
+  transform: scale(1.1);
+  box-shadow: 1rem 0 3rem #000;
+}
+.photo-tall {
+  grid-row: span 2 / auto;
+}
+.photo-wide {
+  grid-column: span 2 / auto;
+}
+
+/* Контакты */
+.contacts {
+  padding: 30px 0 30px 0;
+  background-color: rgb(40, 40, 40);
+}
+.contacts-title{
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+.contacts_text {
+  display: inline-block;
+  text-align: center;
+  margin: 10px 0 10px;
+  color: white;
+  font-size: 20px;
+}
+.contacts-form {
+  display: block;
+  position: relative;
+  padding: 0 40px 0 40px;
+}
+.contacts-form form {
+  font-family: 'Nunito', sans-serif;
+  background-color: rgb(22, 22, 22);
+  padding: 20px 30px 30px 30px;
+  display: inline-block;
+  box-shadow: 15px 15px 3rem #000 ; 
+  transition: .3s;
+  margin-bottom: 40px;
+  
+}
+.contacts-form form:hover{
+  box-shadow: 30px 30px 3rem #000 ;
+  transform: translateY(-10px) translateX(-10px);
+}
+.contacts-form legend {
+  display: block;
+  color: white;
+  font-size: 2em;
+  line-height: 50px;
+  text-transform: uppercase;
+  border-bottom: 3px solid#ff0057;
+  font-family: 'Lato', sans-serif;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  color: white;
+  margin-bottom: 5px;
+}
+
+input  {
+  height: 40px;
+  margin-bottom: 15px;
+  outline: none;
+  border: 3px solid white ;
+  padding: 0px 10px 0px 10px;
+  /* background-color: rgb(40, 40, 40); */
+  background-color:transparent;
+  color: white;
+  
+}
+textarea{
+  font-family: 'Nunito', sans-serif;
+  padding: 10px;
+  outline: none;
+  height: 150px;
+  resize: none;
+  margin-bottom: 15px;
+  background-color:transparent;
+  border: 3px solid white ;
+  color: white;
+}
+.contct_batn {
+  font-size: 12px;
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+}
+
+.contact-social {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-social img {
+  width: 100px;
+  
+}
+.social_inst,
+.social_wk,
+.social_tgm {
+  border: 1px solid white;
+  padding: 50px;
+  border-radius: 50%;
+  transition: .3s;
+  margin-right: 10px;
+}
+.social_inst:hover{
+  background: linear-gradient(45deg, #FFDC80,#FCAF45,#F77737,#F56040,#FD1D1D,#E1306C,#C13584,#833AB4,#5851DB,#405DE6)
+}
+.social_wk:hover{
+background-color: #597da3;
+}
+.social_tgm:hover{
+  background-color:  #0088cc;
+}
+.social_inst:hover,
+.social_wk:hover,
+.social_tgm:hover {
+  transform:scale(1.2);
+  border:none;
+}
+.contacts_social-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 2em;
+  line-height: 50px;
+  text-transform: uppercase;
+  display: block;
+  color: white;
+  margin-bottom: 30px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  color: rgb(121, 121, 121);
+  font-weight: 700;
+  padding: 10px 0px 10px 0px;
+}
+footer a {
+  color: rgb(121, 121, 121);
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* buttom up */
+.button {   
+  display:none;   
+  background-color: rgb(35, 35, 35, 0.5);   
+  width: 60px;   
+  height: 60px;   
+  text-align: center;     
+  margin: 30px;   
+  position: fixed;   
+  bottom: 30px;   
+  right: 30px;   
+  transition: .3s;   
+  z-index: 1000; 
+  font-size: 2em;
+  line-height: 60px;
+  color: white;
+} 
+.show {
+  display: block;
+}
+.button:hover {   
+  cursor: pointer;   
+  background-color: rgb(35, 35, 35); 
+  color: #fff;
+} 
+
+/* ==================================================== */
+
+/* Страница Галерея */
+.gallery{
+  position: relative;
+  margin-top: 100px;
+
+}
+.home{
+  display:none;      
+  width: 60px;     
+  text-align: center;        
+  font-size: 40px;
+  color: white;
+  border: hidden;
+}
+
+
+.gallery_link {
+  color: #ff0057;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+}
+.gallery_bar.header::before{
+ background-color: rgb(40, 40, 40);
+}
+.gallery_link.nav-link::after {
+  display: none;
+} 
+
+.gallery-item{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 176px;
+  grid-gap: 5px;
+}
+.pic {
+  background-color: rgb(66, 36, 36);
+  color: #000;
+  background-image: url("./gallery/img_gallery/grid_photo_normal.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pic_tall {
+  background-image: url("./gallery/img_gallery/grid_photo_tall.jpg");
+  grid-row: span 3
+}
+.pic_huge {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
