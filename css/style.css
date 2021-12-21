@@ -164,12 +164,11 @@ display: flex;
 }
 .paralax {
   position: relative;
-  background: url("./img/bg_paralax.jpg");
+  background-image: url("../img/bg_paralax.jpg");
   background-size: cover;
   height: 100%;
   color: white;
   background-position: right;
-  
 }
 .paralax__inner{
 position: absolute;
@@ -310,7 +309,7 @@ font-family: 'Amatic SC', cursive;;
 
 /* карточки работ */
 .work {
-  background-image: url("./img/bg-rock.jpg");
+  background-image: url("../img/bg-rock.jpg");
   background-size:cover;
   padding-top: 40px;
   padding-bottom: 20px;
@@ -344,11 +343,11 @@ font-family: 'Amatic SC', cursive;;
   color: grey;
 }
 .cardNum-1:hover {
-  background-image: url("./img/portret.jpeg");
+  background-image: url("../img/portret.jpeg");
   
 }
 .cardNum-2:hover {
-  background-image: url("./img/Family-BG.jpg");
+  background-image: url("../img/Family-BG.jpg");
 }
 .card:hover {
   transform: translateY(-1rem);
