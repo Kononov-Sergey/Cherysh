@@ -6,14 +6,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
 html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 100;
 }
 a {
@@ -31,8 +30,8 @@ a {
   position: relative;
   overflow: hidden;
   text-decoration: none;
-  display:block;
-  text-align:center;
+  display: block;
+  text-align: center;
   background: transparent;
   border: 2px solid white;
   cursor: pointer;
@@ -40,7 +39,7 @@ a {
 .def_boot::after {
   padding: 0;
   border: 2px solid #00000000;
-  content: '';
+  content: "";
   width: 95%;
   height: 46px;
   display: block;
@@ -50,11 +49,8 @@ a {
   left: 0;
 }
 .def_boot::before {
-  -webkit-transition: all 0s ease-in-out;
-  -moz-transition: all 0s ease-in-out;
-  -o-transition: all 0s ease-in-out;
-  transition: all 0s ease-in-out;
-  content: '';
+  transition: all 0.5s ease-in-out;
+  content: "";
   width: 100%;
   height: 60px;
   display: block;
@@ -66,22 +62,13 @@ a {
   top: 0px;
   left: -15px;
   margin-left: -1px;
-  -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
   transform: translate(0, 0);
   z-index: 1;
 }
-.def_boot:hover:before, .def_boot:active:before,.def_boot:focus:before {
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+.def_boot:hover:before,
+.def_boot:active:before,
+.def_boot:focus:before {
   transition: all 0.4s ease-in-out;
-  -webkit-transform: translate(115%, 0);
-  -moz-transform: translate(115%, 0);
-  -ms-transform: translate(115%, 0);
-  -o-transform: translate(115%, 0);
   transform: translate(115%, 0);
 }
 .container {
@@ -95,9 +82,8 @@ body {
   height: 100%;
   width: 100%;
   background-color: rgb(22, 22, 22);
-  
 }
- .header{
+.header {
   position: fixed;
   width: 100%;
   top: 0;
@@ -105,19 +91,17 @@ body {
   z-index: 2;
 }
 .header::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgb(22, 22, 22, 0.8);
-  
 }
-.header__menu{
+.header__menu {
   display: flex;
   align-items: center;
-
 }
 
 .navBar {
@@ -127,21 +111,19 @@ body {
   height: 100px;
   align-items: center;
 }
-.nav__burger{
+.nav__burger {
   display: none;
-  transition: .4s;
-  
+  transition: 0.4s;
 }
 .logo {
-  height:55px;
-  
+  height: 55px;
 }
 .nav__links li {
   padding: 0 20px;
   list-style: none;
 }
-.nav__links{
-display: flex;
+.nav__links {
+  display: flex;
 }
 .nav-link {
   color: white;
@@ -149,18 +131,18 @@ display: flex;
   font-weight: 100;
   font-size: 20px;
   padding-bottom: 1px;
-  }
+}
 .nav-link:after {
   background-color: white;
   display: block;
   content: "";
   height: 3px;
   width: 0%;
-  transition: width .3s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 .nav-link:hover:after,
 .nav-link:focus:after {
-    width: 100%;
+  width: 100%;
 }
 .paralax {
   position: relative;
@@ -170,26 +152,26 @@ display: flex;
   color: white;
   background-position: right;
 }
-.paralax__inner{
-position: absolute;
-top: 50%;
-left: 50%;
-text-align: center;
-align-items: center;
-transform: translateX(-50%) translateY(-50%);
-line-height: 2em;
-font-size: 50px;
-font-family: 'Amatic SC', cursive;;
+.paralax__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  align-items: center;
+  transform: translateX(-50%) translateY(-50%);
+  line-height: 2em;
+  font-size: 50px;
+  font-family: "Amatic SC", cursive;
 }
- 
+
 .about {
   position: relative;
-  background: rgb(22, 22, 22);;
+  background: rgb(22, 22, 22);
   line-height: 30px;
   font-weight: lighter;
   padding: 40px 0 40px 0;
   color: grey;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 /* обо мне + текст */
 .about__top {
@@ -200,7 +182,7 @@ font-family: 'Amatic SC', cursive;;
 }
 .title {
   display: block;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: white;
   font-size: 60px;
   margin-bottom: 30px;
@@ -222,29 +204,28 @@ font-family: 'Amatic SC', cursive;;
   text-align: center;
   display: block;
   position: relative;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: rgb(160, 160, 160);
   font-size: 24px;
   padding: 0 80px 0 80px;
 }
 
 /* обо мне */
-.about__adv{
+.about__adv {
   display: flex;
   justify-content: space-between;
 }
-.face{
+.face {
   width: 350px;
   height: 200px;
   transition: 0.5s;
 }
-.about__adv .about__card{
-  font-family: 'Nunito', sans-serif;
+.about__adv .about__card {
+  font-family: "Nunito", sans-serif;
   position: relative;
   cursor: pointer;
-  
 }
-.face.face1{
+.face.face1 {
   position: relative;
   background: #333;
   display: flex;
@@ -255,25 +236,25 @@ font-family: 'Amatic SC', cursive;;
   text-align: center;
   text-transform: uppercase;
 }
-.about__card:hover .face.face1{
+.about__card:hover .face.face1 {
   background: #ff0057;
   transform: translateY(0);
   color: white;
 }
-.face.face1 .content{
+.face.face1 .content {
   opacity: 0.2;
   transition: width 0.5s ease-in-out;
 }
-.about__card:hover .face.face1 .content{
+.about__card:hover .face.face1 .content {
   opacity: 1;
   transition: width 0.5s ease-in-out;
 }
 
-.face.face1 .content img{
+.face.face1 .content img {
   max-width: 100px;
   margin-bottom: 10px;
 }
-.face.face2{
+.face.face2 {
   position: relative;
   background: #fff;
   display: flex;
@@ -284,17 +265,17 @@ font-family: 'Amatic SC', cursive;;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
   transform: translateY(-100px);
 }
-.about__card:hover .face.face2{
+.about__card:hover .face.face2 {
   transform: translateY(0);
 }
-.content p{
+.content p {
   margin: 0;
   padding: 0;
 }
 
-.content a{
+.content a {
   margin: 15px 0 0;
-  display:  inline-block;
+  display: inline-block;
   text-decoration: none;
   font-weight: 900;
   color: #333;
@@ -302,7 +283,7 @@ font-family: 'Amatic SC', cursive;;
   border: 1px solid #333;
 }
 
-.content a:hover{
+.content a:hover {
   background: #333;
   color: #fff;
 }
@@ -310,7 +291,7 @@ font-family: 'Amatic SC', cursive;;
 /* карточки работ */
 .work {
   background-image: url("../img/bg-rock.jpg");
-  background-size:cover;
+  background-size: cover;
   padding-top: 40px;
   padding-bottom: 20px;
   overflow-x: hidden;
@@ -322,9 +303,9 @@ font-family: 'Amatic SC', cursive;;
   position: relative;
 }
 .work__card-list {
- display: flex;
- padding: 1rem 0 3em;
- margin-left: 130px;
+  display: flex;
+  padding: 1rem 0 3em;
+  margin-left: 130px;
 }
 .card {
   position: relative;
@@ -335,7 +316,7 @@ font-family: 'Amatic SC', cursive;;
   padding: 1.5rem;
   background: #333;
   box-shadow: -1rem 0 3rem #000;
-  transition: .2s;
+  transition: 0.2s;
   display: flex;
   justify-content: start;
   background-position-y: 400px;
@@ -344,7 +325,6 @@ font-family: 'Amatic SC', cursive;;
 }
 .cardNum-1:hover {
   background-image: url("../img/portret.jpeg");
-  
 }
 .cardNum-2:hover {
   background-image: url("../img/Family-BG.jpg");
@@ -356,7 +336,7 @@ font-family: 'Amatic SC', cursive;;
   color: white;
 }
 
-.card:hover~.card {
+.card:hover ~ .card {
   transform: translateX(130px);
 }
 
@@ -366,22 +346,22 @@ font-family: 'Amatic SC', cursive;;
 .card:not(:last-child) {
   margin-left: -130px;
 }
-.card-title{
+.card-title {
   display: block;
   position: absolute;
   text-transform: uppercase;
   transform: rotate(-90deg) translateY(-100px) translateX(-80px);
-  font-family: 'Amatic SC';
+  font-family: "Amatic SC";
   font-weight: 700;
   font-size: 50px;
   color: white;
 }
-.cardNum-1 .card-title{
+.cardNum-1 .card-title {
   transform: rotate(-90deg) translateY(-55px) translateX(-35px);
 }
-.card__main{
+.card__main {
   display: block;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 700;
   position: relative;
   height: 100%;
@@ -397,7 +377,7 @@ font-family: 'Amatic SC', cursive;;
   cursor: pointer;
   font-size: 12px;
   padding: 1em;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 /* фото галерея */
 .gallery {
@@ -416,9 +396,9 @@ font-family: 'Amatic SC', cursive;;
 }
 .photo {
   /* box-shadow: -1rem 0 3rem #000; */
-  transition: .3s;
+  transition: 0.3s;
 }
-.photo:hover{
+.photo:hover {
   transform: scale(1.1);
   box-shadow: 1rem 0 3rem #000;
 }
@@ -434,7 +414,7 @@ font-family: 'Amatic SC', cursive;;
   padding: 30px 0 30px 0;
   background-color: rgb(40, 40, 40);
 }
-.contacts-title{
+.contacts-title {
   display: block;
   text-align: center;
   margin-bottom: 30px;
@@ -453,17 +433,16 @@ font-family: 'Amatic SC', cursive;;
   padding: 0 40px 0 40px;
 }
 .contacts-form form {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   background-color: rgb(22, 22, 22);
   padding: 20px 30px 30px 30px;
   display: inline-block;
-  box-shadow: 15px 15px 3rem #000 ; 
-  transition: .3s;
+  box-shadow: 15px 15px 3rem #000;
+  transition: 0.3s;
   margin-bottom: 40px;
-  
 }
-.contacts-form form:hover{
-  box-shadow: 30px 30px 3rem #000 ;
+.contacts-form form:hover {
+  box-shadow: 30px 30px 3rem #000;
   transform: translateY(-10px) translateX(-10px);
 }
 .contacts-form legend {
@@ -473,7 +452,7 @@ font-family: 'Amatic SC', cursive;;
   line-height: 50px;
   text-transform: uppercase;
   border-bottom: 3px solid#ff0057;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .form-group {
   display: flex;
@@ -484,31 +463,30 @@ label {
   margin-bottom: 5px;
 }
 
-input  {
+input {
   height: 40px;
   margin-bottom: 15px;
   outline: none;
-  border: 3px solid white ;
+  border: 3px solid white;
   padding: 0px 10px 0px 10px;
   /* background-color: rgb(40, 40, 40); */
-  background-color:transparent;
+  background-color: transparent;
   color: white;
-  
 }
-textarea{
-  font-family: 'Nunito', sans-serif;
+textarea {
+  font-family: "Nunito", sans-serif;
   padding: 10px;
   outline: none;
   height: 150px;
   resize: none;
   margin-bottom: 15px;
-  background-color:transparent;
-  border: 3px solid white ;
+  background-color: transparent;
+  border: 3px solid white;
   color: white;
 }
 .contct_batn {
   font-size: 12px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   display: inline-block;
 }
 
@@ -518,7 +496,6 @@ textarea{
 }
 .contact-social img {
   width: 100px;
-  
 }
 .social_inst,
 .social_wk,
@@ -526,26 +503,38 @@ textarea{
   border: 1px solid white;
   padding: 50px;
   border-radius: 50%;
-  transition: .3s;
+  transition: 0.3s;
   margin-right: 10px;
 }
-.social_inst:hover{
-  background: linear-gradient(45deg, #FFDC80,#FCAF45,#F77737,#F56040,#FD1D1D,#E1306C,#C13584,#833AB4,#5851DB,#405DE6)
+.social_inst:hover {
+  background: linear-gradient(
+    45deg,
+    #ffdc80,
+    #fcaf45,
+    #f77737,
+    #f56040,
+    #fd1d1d,
+    #e1306c,
+    #c13584,
+    #833ab4,
+    #5851db,
+    #405de6
+  );
 }
-.social_wk:hover{
-background-color: #597da3;
+.social_wk:hover {
+  background-color: #597da3;
 }
-.social_tgm:hover{
-  background-color:  #0088cc;
+.social_tgm:hover {
+  background-color: #0088cc;
 }
 .social_inst:hover,
 .social_wk:hover,
 .social_tgm:hover {
-  transform:scale(1.2);
-  border:none;
+  transform: scale(1.2);
+  border: none;
 }
 .contacts_social-title {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 2em;
   line-height: 50px;
   text-transform: uppercase;
@@ -568,44 +557,27 @@ footer a:hover {
 }
 
 /* buttom up */
-.button {   
-  display:none;   
-  background-color: rgb(35, 35, 35, 0.5);   
-  width: 60px;   
-  height: 60px;   
-  text-align: center;     
-  margin: 30px;   
-  position: fixed;   
-  bottom: 30px;   
-  right: 30px;   
-  transition: .3s;   
-  z-index: 1000; 
+.button {
+  display: none;
+  background-color: rgb(35, 35, 35, 0.5);
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: 0.3s;
+  z-index: 1000;
   font-size: 2em;
   line-height: 60px;
   color: white;
-} 
+}
 .show {
   display: block;
 }
-.button:hover {   
-  cursor: pointer;   
-  background-color: rgb(35, 35, 35); 
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(35, 35, 35);
   color: #fff;
-} 
-
-/* ==================================================== */
-
-/* Страница Галерея */
-.gallery{
-  position: relative;
-  margin-top: 100px;
-
-}
-.home{
-  display:none;      
-  width: 60px;     
-  text-align: center;        
-  font-size: 40px;
-  color: white;
-  border: hidden;
 }
